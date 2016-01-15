@@ -1,3 +1,4 @@
+package me.jonathanhuang.fibonacci;
 
 public class fibonacci {
 
