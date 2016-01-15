@@ -1,5 +1,7 @@
 package me.jonathanhuang.fizzbozznacci;
 
+import me.jonathanhuang.fibonacci.fibonacci;
+
 /**
  * Output first 100 fibonacci numbers starting from 1 [1,1,2,3,5,8,13,...]
  * If divisible by 2 and 3 [divisible by 6] then output FiboNacci instead of number
@@ -11,7 +13,21 @@ package me.jonathanhuang.fizzbozznacci;
  */
 
 public class fizzbozznacci {
+	static fibonacci fib = new fibonacci();
 	
+	public static void main(String[]args) {
+		for (int i=1; i<=100; i++) {
+			if(fib.check(i)%6==0) {
+				System.out.println("FiboNacci");
+			} else if(fib.check(i)%3==0) {
+				System.out.println("Nacci");
+			} else if(fib.check(i)%2==0) {
+				System.out.println("Fibo");
+			} else {
+				System.out.println(fib.check(i));
+			}
+		}
+	}
 }
 
 /*
