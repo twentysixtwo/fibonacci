@@ -13,7 +13,7 @@ public class fibonacciTest {
 		assertEquals("fibonacci 20 is 6765", 6765, fib.check(20));
 		assertEquals("fibonacci 1 is 1", 1, fib.check(1));
 		assertEquals("fibonacci 0 is 0", 0, fib.check(0));
-		assertEquals("fibonacci -1 is undefined. return 0", 0, fib.check(-1));
+		assertEquals("fibonacci -1 is undefined. return -1", -1, fib.check(-1));
 	}
 
 }
