@@ -11,7 +11,7 @@ public class fibonacci {
 	
 	public int check(int num) {
 		// works for cases num >= 0
-		if(num>0) {
+		if(num>=0) {
 			switch(num) {
 			case 0:
 				return 0;
